@@ -8,7 +8,7 @@ using System.Net.Http.Formatting;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Raven.AspNetWebApi.Formatters
+namespace Raven.AspNet.WebApiExtensions.Formatters
 {
     public class MsgPackFormatter : MediaTypeFormatter
     {

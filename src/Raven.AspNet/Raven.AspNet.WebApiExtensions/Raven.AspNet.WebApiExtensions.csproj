@@ -7,8 +7,8 @@
     <ProjectGuid>{1EB9CFB0-4753-4608-875C-0160FA195B5D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Raven.AspNetWebApi</RootNamespace>
-    <AssemblyName>Raven.AspNetWebApi</AssemblyName>
+    <RootNamespace>Raven.AspNet.WebApiExtensions</RootNamespace>
+    <AssemblyName>Raven.AspNet.WebApiExtensions</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

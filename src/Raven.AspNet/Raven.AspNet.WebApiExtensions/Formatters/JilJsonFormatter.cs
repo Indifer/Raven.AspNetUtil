@@ -10,7 +10,7 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Raven.AspNetWebApi.Formatter
+namespace Raven.AspNet.WebApiExtensions.Formatter
 {
     public class JilJsonFormatter : MediaTypeFormatter
     {

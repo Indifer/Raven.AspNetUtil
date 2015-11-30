@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Web.Http.Filters;
 
-namespace Raven.AspNetWebApi.Attributes
+namespace Raven.AspNet.WebApiExtensions.Attributes
 {
     public class DeflateCompressionAttribute : ActionFilterAttribute
     {
