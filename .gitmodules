@@ -1,0 +1,6 @@
+[submodule "modules/Raven.Serializer"]
+	path = modules/Raven.Serializer
+	url = git@github.com:Indifer/Raven.Serializer.git
+[submodule "modules/Raven.Rpc.HttpProtocol"]
+	path = modules/Raven.Rpc.HttpProtocol
+	url = git@github.com:Indifer/Raven.Rpc.HttpProtocol.git
