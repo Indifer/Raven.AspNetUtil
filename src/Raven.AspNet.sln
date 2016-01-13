@@ -1,17 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.23107.0
+VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.WebApiExtensions", "Raven.AspNet\Raven.AspNet.WebApiExtensions\Raven.AspNet.WebApiExtensions.csproj", "{1EB9CFB0-4753-4608-875C-0160FA195B5D}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.WebApiExtensions.Test", "Raven.AspNet\Raven.AspNet.WebApiExtensions.Test\Raven.AspNet.WebApiExtensions.Test.csproj", "{70C854E8-41E3-481B-A710-85ED9AC7DE7A}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.Serializer", "..\modules\Raven.Serializer\src\Raven.Serializer\Raven.Serializer.csproj", "{9A8FDCDA-5B66-40BB-86ED-16BEDC7C1570}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.Serializer.MsgPack", "..\modules\Raven.Serializer\src\Raven.Serializer.MsgPack\Raven.Serializer.MsgPack.csproj", "{39523607-3427-4A9F-93AF-8D0169CFE6A7}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0.Raven.Serializer", "0.Raven.Serializer", "{133181CA-BE30-497D-A04D-19E2AD0B088F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.MvcExtensions", "Raven.AspNet\Raven.AspNet.MvcExtensions\Raven.AspNet.MvcExtensions.csproj", "{C08A8B5F-EFAE-4F0F-9D3F-A5B1D1B54DE9}"
 EndProject
@@ -29,14 +23,6 @@ Global
 		{70C854E8-41E3-481B-A710-85ED9AC7DE7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{70C854E8-41E3-481B-A710-85ED9AC7DE7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{70C854E8-41E3-481B-A710-85ED9AC7DE7A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9A8FDCDA-5B66-40BB-86ED-16BEDC7C1570}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9A8FDCDA-5B66-40BB-86ED-16BEDC7C1570}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9A8FDCDA-5B66-40BB-86ED-16BEDC7C1570}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9A8FDCDA-5B66-40BB-86ED-16BEDC7C1570}.Release|Any CPU.Build.0 = Release|Any CPU
-		{39523607-3427-4A9F-93AF-8D0169CFE6A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{39523607-3427-4A9F-93AF-8D0169CFE6A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{39523607-3427-4A9F-93AF-8D0169CFE6A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{39523607-3427-4A9F-93AF-8D0169CFE6A7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{C08A8B5F-EFAE-4F0F-9D3F-A5B1D1B54DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C08A8B5F-EFAE-4F0F-9D3F-A5B1D1B54DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C08A8B5F-EFAE-4F0F-9D3F-A5B1D1B54DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -44,9 +30,5 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
-	EndGlobalSection
-	GlobalSection(NestedProjects) = preSolution
-		{9A8FDCDA-5B66-40BB-86ED-16BEDC7C1570} = {133181CA-BE30-497D-A04D-19E2AD0B088F}
-		{39523607-3427-4A9F-93AF-8D0169CFE6A7} = {133181CA-BE30-497D-A04D-19E2AD0B088F}
 	EndGlobalSection
 EndGlobal
