@@ -1,4 +1,4 @@
-﻿using Jil;
+﻿using Raven.Serializer;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -10,20 +10,17 @@ using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Raven.AspNet.WebApiExtensions.Formatter
+namespace Raven.AspNet.WebApiExtensions.Formatters
 {
     public class JilJsonFormatter : MediaTypeFormatter
     {
-        private readonly Options _jilOptions;
+        private static readonly IDataSerializer serializer = SerializerFactory.Create(SerializerType.Jil);
+
         public JilJsonFormatter()
         {
-            _jilOptions = new Options(dateFormat: DateTimeFormat.ISO8601);
-
-            SupportedMediaTypes.Add(new MediaTypeHeaderValue("application/json"));
-
-            SupportedEncodings.Add(new UTF8Encoding(encoderShouldEmitUTF8Identifier: false, throwOnInvalidBytes: true));
-            SupportedEncodings.Add(new UnicodeEncoding(bigEndian: false, byteOrderMark: true, throwOnInvalidBytes: true));
+            SupportedMediaTypes.Add(new System.Net.Http.Headers.MediaTypeHeaderValue("application/json"));
         }
+
         public override bool CanReadType(Type type)
         {
             if (type == null)
@@ -42,35 +39,33 @@ namespace Raven.AspNet.WebApiExtensions.Formatter
             return true;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="readStream"></param>
+        /// <param name="content"></param>
+        /// <param name="formatterLogger"></param>
+        /// <returns></returns>
         public override Task<object> ReadFromStreamAsync(Type type, Stream readStream, System.Net.Http.HttpContent content, IFormatterLogger formatterLogger)
         {
-            return Task.FromResult(this.DeserializeFromStream(type, readStream));
+            var obj = serializer.Deserialize(type, readStream);
+            return Task.FromResult(obj);
         }
 
-
-        private object DeserializeFromStream(Type type, Stream readStream)
-        {
-
-            try
-            {
-                using (var reader = new StreamReader(readStream))
-                {
-                    return JSON.Deserialize(reader, type, _jilOptions);
-                }
-            }
-            catch
-            {
-                return null;
-            }
-
-        }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="value"></param>
+        /// <param name="writeStream"></param>
+        /// <param name="content"></param>
+        /// <param name="transportContext"></param>
+        /// <returns></returns>
         public override Task WriteToStreamAsync(Type type, object value, Stream writeStream, System.Net.Http.HttpContent content, TransportContext transportContext)
         {
-            var streamWriter = new StreamWriter(writeStream);
-            JSON.Serialize(value, streamWriter, _jilOptions);
-            streamWriter.Flush();
-            return Task.FromResult(writeStream);
+            serializer.Serialize(value, writeStream);
+            return writeStream.FlushAsync();
         }
     }
 }

@@ -12,13 +12,20 @@ using System.Web.Http.Dispatcher;
 
 namespace Raven.AspNet.WebApiExtensions.Route
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public class NamespaceHttpControllerSelector : DefaultHttpControllerSelector
     {
-        public static readonly string ControllerKey = "controller";
+        private static readonly string ControllerKey = "controller";
         private const string NamespaceRouteVariableName = "Namespace";
         private readonly HttpConfiguration _configuration;
         private readonly Lazy<ConcurrentDictionary<string, Type>> _apiControllerCache;
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="configuration"></param>
         public NamespaceHttpControllerSelector(HttpConfiguration configuration)
             : base(configuration)
         {

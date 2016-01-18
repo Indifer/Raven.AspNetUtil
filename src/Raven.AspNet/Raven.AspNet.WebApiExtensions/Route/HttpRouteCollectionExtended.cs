@@ -9,13 +9,36 @@ using System.Web.Http.Routing;
 
 namespace Raven.AspNet.WebApiExtensions.Route
 {
+    /// <summary>
+    /// 
+    /// </summary>
     public static class HttpRouteCollectionExtended
     {
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="routes"></param>
+        /// <param name="name"></param>
+        /// <param name="routeTemplate"></param>
+        /// <param name="defaults"></param>
+        /// <param name="namespaces"></param>
+        /// <returns></returns>
         public static IHttpRoute MapHttpRoute(this HttpRouteCollection routes, string name, string routeTemplate, object defaults, string[] namespaces)
         {
             return routes.MapHttpRoute(name, routeTemplate, defaults, null, null, namespaces);
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="routes"></param>
+        /// <param name="name"></param>
+        /// <param name="routeTemplate"></param>
+        /// <param name="defaults"></param>
+        /// <param name="constraints"></param>
+        /// <param name="handler"></param>
+        /// <param name="namespaces"></param>
+        /// <returns></returns>
         public static IHttpRoute MapHttpRoute(this HttpRouteCollection routes, string name, string routeTemplate, object defaults, object constraints, HttpMessageHandler handler, string[] namespaces)
         {
             if (routes == null)

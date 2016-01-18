@@ -31,9 +31,11 @@
     <DocumentationFile>bin\Release\Raven.AspNet.WebApiExtensions.xml</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
+    <Reference Include="MsgPack">
+      <HintPath>..\..\..\modules\Raven.Serializer\output\net45\Raven.Serializer.WithMsgPack\MsgPack.dll</HintPath>
+    </Reference>
+    <Reference Include="Raven.Serializer">
+      <HintPath>..\..\..\modules\Raven.Serializer\output\net45\Raven.Serializer\Raven.Serializer.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -54,6 +56,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Formatters\JilJsonFormatter.cs" />
+    <Compile Include="Formatters\MsgPackFormatter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Route\HttpRouteCollectionExtended.cs" />
     <Compile Include="Route\NamespaceHttpControllerSelector.cs" />
