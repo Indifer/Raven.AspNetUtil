@@ -15,7 +15,7 @@ namespace Raven.AspNet.WebApiExtensions.Formatters
     /// </summary>
     public class MsgPackFormatter : MediaTypeFormatter
     {
-        private static readonly IDataSerializer serializer = SerializerFactory.Create(SerializerType.Jil);
+        private static readonly IDataSerializer serializer = SerializerFactory.Create(SerializerType.MsgPack);
 
         /// <summary>
         /// 
