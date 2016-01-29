@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Order\Controllers\HomeController.cs" />
     <Compile Include="Controllers\TestController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -129,6 +130,10 @@
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Raven.AspNet.Lib\Raven.AspNet.Lib.csproj">
+      <Project>{1c7afdf4-4619-44e1-8250-f0c8b390000b}</Project>
+      <Name>Raven.AspNet.Lib</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Raven.AspNet.WebApiExtensions\Raven.AspNet.WebApiExtensions.csproj">
       <Project>{1eb9cfb0-4753-4608-875c-0160fa195b5d}</Project>
       <Name>Raven.AspNet.WebApiExtensions</Name>

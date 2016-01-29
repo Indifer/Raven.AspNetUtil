@@ -20,12 +20,26 @@ namespace Raven.AspNet.WebApiExtensions.Test
             // Web API 路由
             config.MapHttpAttributeRoutes();
 
+
+            config.Routes.MapHttpRoute(
+                name: "LibAreasDefaultApi",
+                routeTemplate: "Lib/{controller}/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional },
+                namespaces: new string[] { "Raven.AspNet.Lib" }
+            );
+
+            config.Routes.MapHttpRoute(
+                name: "OrderAreasDefaultApi",
+                routeTemplate: "Order/{controller}/{action}/{id}",
+                defaults: new { id = RouteParameter.Optional },
+                namespaces: new string[] { "Raven.AspNet.WebApiExtensions.Test.Areas.Order.Controllers" }
+            );
+
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",
                 routeTemplate: "{controller}/{action}/{id}",
                 defaults: new { id = RouteParameter.Optional },
-                namespaces: new string[] { "Raven.AspNet.WebApiExtensions.Test.A.Controllers" }
-                
+                namespaces: new string[] { "Raven.AspNet.WebApiExtensions.Test.A.Controllers" }                
             );
         }
     }
