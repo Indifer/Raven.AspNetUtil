@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace Raven.AspNet.WebApiExtensions.Formatters
 {
     /// <summary>
-    /// 
+    /// MediaType:"application/msgpack"
     /// </summary>
     public class MsgPackFormatter : MediaTypeFormatter
     {

@@ -12,15 +12,26 @@ using System.Threading.Tasks;
 
 namespace Raven.AspNet.WebApiExtensions.Formatters
 {
+    /// <summary>
+    /// MediaType:"application/json"
+    /// </summary>
     public class JilJsonFormatter : MediaTypeFormatter
     {
         private static readonly IDataSerializer serializer = SerializerFactory.Create(SerializerType.Jil);
 
+        /// <summary>
+        /// 
+        /// </summary>
         public JilJsonFormatter()
         {
             SupportedMediaTypes.Add(new System.Net.Http.Headers.MediaTypeHeaderValue("application/json"));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public override bool CanReadType(Type type)
         {
             if (type == null)
@@ -30,6 +41,11 @@ namespace Raven.AspNet.WebApiExtensions.Formatters
             return true;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="type"></param>
+        /// <returns></returns>
         public override bool CanWriteType(Type type)
         {
             if (type == null)
