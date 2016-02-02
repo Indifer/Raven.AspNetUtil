@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Raven.AspNet.WebApiExtensions.Attributes;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -23,11 +24,24 @@ namespace Raven.AspNet.WebApiExtensions.Test.A.Controllers
         {
             return new User { Name = "gg", ID = 134 };
         }
+
+        [HttpGet]
+        [Compression]
+        public List<User> C()
+        {
+            List<User> list = new List<Controllers.User>();
+            for (var i = 0; i < 10; i++)
+            {
+                list.Add(new User { Name = "gg", ID = 134 });
+            }
+            return list;
+        }
+
     }
-    
+
     public class User
     {
-        
+
         public string Name { get; set; }
 
         public long ID { get; set; }
