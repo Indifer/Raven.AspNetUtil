@@ -14,7 +14,7 @@ namespace Raven.AspNet.WebApiExtensions.Test
             // Web API 配置和服务
 
             config.Formatters.Remove(config.Formatters.JsonFormatter);
-            config.Formatters.Add(new JilJsonFormatter());
+            //config.Formatters.Add(new JilJsonFormatter());
             config.Formatters.Add(new MsgPackFormatter());
 
             // Web API 路由

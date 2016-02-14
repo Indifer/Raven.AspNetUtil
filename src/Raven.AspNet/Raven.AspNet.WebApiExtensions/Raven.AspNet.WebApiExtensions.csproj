@@ -35,11 +35,17 @@
       <HintPath>..\..\packages\DotNetZip.1.9.8\lib\net20\Ionic.Zip.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="MsgPack">
-      <HintPath>..\..\..\modules\Raven.Serializer\output\net45\Raven.Serializer.WithMsgPack\MsgPack.dll</HintPath>
+    <Reference Include="MsgPack, Version=0.6.0.0, Culture=neutral, PublicKeyToken=a2625990d5dc0167, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\MsgPack.Cli.0.6.7\lib\net45\MsgPack.dll</HintPath>
+      <Private>True</Private>
     </Reference>
-    <Reference Include="Raven.Serializer">
-      <HintPath>..\..\..\modules\Raven.Serializer\output\net45\Raven.Serializer\Raven.Serializer.dll</HintPath>
+    <Reference Include="Raven.Serializer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Raven.Serializer.1.0.1\lib\net45\Raven.Serializer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Raven.Serializer.WithMsgPack, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Raven.Serializer.WithMsgPack.1.0.1\lib\net45\Raven.Serializer.WithMsgPack.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

@@ -11,7 +11,7 @@ using System.Threading;
 namespace Raven.AspNet.WebApiExtensions.Attributes
 {
     /// <summary>
-    /// Deflate 压缩
+    /// 压缩
     /// </summary>
     [AttributeUsage(AttributeTargets.Class | AttributeTargets.Method, Inherited = true, AllowMultiple = false)]
     public class CompressionAttribute : ActionFilterAttribute
