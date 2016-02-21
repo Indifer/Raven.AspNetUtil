@@ -17,7 +17,14 @@ namespace Raven.AspNet.WebApiExtensions.Formatters
     /// </summary>
     public class JilJsonFormatter : MediaTypeFormatter
     {
-        private static readonly IDataSerializer serializer = SerializerFactory.Create(SerializerType.Jil);
+        private static readonly Lazy<IDataSerializer> serializerLazy = new Lazy<IDataSerializer>(() => SerializerFactory.Create(SerializerType.Jil));
+        private static IDataSerializer Serializer
+        {
+            get
+            {
+                return serializerLazy.Value;
+            }
+        }
 
         /// <summary>
         /// 
@@ -65,7 +72,7 @@ namespace Raven.AspNet.WebApiExtensions.Formatters
         /// <returns></returns>
         public override Task<object> ReadFromStreamAsync(Type type, Stream readStream, System.Net.Http.HttpContent content, IFormatterLogger formatterLogger)
         {
-            var obj = serializer.Deserialize(type, readStream);
+            var obj = Serializer.Deserialize(type, readStream);
             return Task.FromResult(obj);
         }
 
@@ -80,7 +87,7 @@ namespace Raven.AspNet.WebApiExtensions.Formatters
         /// <returns></returns>
         public override Task WriteToStreamAsync(Type type, object value, Stream writeStream, System.Net.Http.HttpContent content, TransportContext transportContext)
         {
-            serializer.Serialize(value, writeStream);
+            Serializer.Serialize(value, writeStream);
             return writeStream.FlushAsync();
         }
     }
