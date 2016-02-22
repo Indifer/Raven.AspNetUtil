@@ -58,7 +58,7 @@ namespace Raven.AspNet.WebApiExtensions.Util
     /// Compression Type
     /// deflate,gzip,zlib
     /// </summary>
-    public enum CompressionType : Int32
+    public enum CompressionType : int
     {
         None = 0,
         Deflate = 1,

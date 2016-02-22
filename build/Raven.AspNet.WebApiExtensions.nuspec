@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Raven.AspNet.WebApiExtensions</id>
+        <version>1.0.4</version>
+        <authors>LiangYi</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Raven.AspNet.WebApiExtensions</description>
+    </metadata>
+    <files>
+        <file src="..\output\net45\Raven.AspNet.WebApiExtensions\Raven.AspNet.WebApiExtensions.dll" target="lib\net45\Raven.AspNet.WebApiExtensions.dll" />
+        <file src="..\output\net45\Raven.AspNet.WebApiExtensions\Raven.AspNet.WebApiExtensions.pdb" target="lib\net45\Raven.AspNet.WebApiExtensions.pdb" />
+        <file src="..\output\net45\Raven.AspNet.WebApiExtensions\Raven.AspNet.WebApiExtensions.xml" target="lib\net45\Raven.AspNet.WebApiExtensions.xml" />
+    </files>
+</package>

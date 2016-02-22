@@ -81,6 +81,7 @@ namespace Raven.AspNet.WebApiExtensions.Attributes
         /// 
         /// </summary>
         /// <param name="request"></param>
+        /// <param name="encoding"></param>
         /// <returns></returns>
         private CompressionType GetCompressionType(HttpRequestMessage request, out string encoding)
         {

@@ -3,7 +3,7 @@
 *.user
 bin
 obj
-
+TestResults
+.vs
 log
 *.pubxml
-*.vs
