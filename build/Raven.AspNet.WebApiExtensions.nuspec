@@ -6,6 +6,9 @@
         <authors>LiangYi</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <description>Raven.AspNet.WebApiExtensions</description>
+        <dependencies>
+            <dependency id="Raven.Serializer" version="1.0.1" />
+        </dependencies>
     </metadata>
     <files>
         <file src="..\output\net45\Raven.AspNet.WebApiExtensions\Raven.AspNet.WebApiExtensions.dll" target="lib\net45\Raven.AspNet.WebApiExtensions.dll" />
