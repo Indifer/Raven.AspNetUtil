@@ -71,7 +71,7 @@ namespace Raven.AspNet.WebApiExtensions.Attributes
                         if (bytes != null)
                         {
                             byte[] zlibbedContent = null;
-                            zlibbedContent = CompressionHelper.DeflateByte(bytes, compressionType);
+                            zlibbedContent = CompressionHelper.CompressionByte(bytes, compressionType);
                             var newContent = new ByteArrayContent(zlibbedContent);
                             newContent.Headers.Add("Content-encoding", encoding);
                             newContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(content.Headers.ContentType.MediaType);

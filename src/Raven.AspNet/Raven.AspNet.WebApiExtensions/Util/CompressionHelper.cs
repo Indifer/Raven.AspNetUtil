@@ -9,7 +9,7 @@ namespace Raven.AspNet.WebApiExtensions.Util
 {
     internal static class CompressionHelper
     {
-        public static byte[] DeflateByte(byte[] str, CompressionType compressionType)
+        public static byte[] CompressionByte(byte[] str, CompressionType compressionType)
         {
             if (str == null)
             {
