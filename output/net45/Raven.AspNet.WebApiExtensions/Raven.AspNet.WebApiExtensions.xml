@@ -14,12 +14,6 @@
             
             </summary>
         </member>
-        <member name="M:Raven.AspNet.WebApiExtensions.Attributes.CompressionAttribute.OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext)">
-            <summary>
-            
-            </summary>
-            <param name="actContext"></param>
-        </member>
         <member name="M:Raven.AspNet.WebApiExtensions.Attributes.CompressionAttribute.GetCompressionType(System.Net.Http.HttpRequestMessage,System.String@)">
             <summary>
             
