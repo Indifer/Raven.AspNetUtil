@@ -1,0 +1,37 @@
+/*首页*/
+.col-2 li {width:50%;}
+.col-3 li {width:33.333%;}
+.col-4 li {width:25%;}
+.col-5 li {width:20%;}
+
+.hd_nav h1 {padding:0 10px;line-height:44px;font-size:18px;-webkit-box-flex: 1;font-weight: normal;white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.hd_nav h1 img {margin-right:10px;margin-top:8px;height:30px;}
+.hd_nav .icon-scan {position:absolute;top:0;right:0;width:44px;height:44px;text-align:center;padding-top:6px;}
+.hd_nav .icon-scan i:before{font-size:18px;}
+.hd_nav .icon-scan>span{font-size:10px;display:block;color:#666;}
+.slider-container {position:relative;overflow:hidden;height:1.2rem;margin-bottom:0.266rem;padding-left:2.799rem;border-top:1px solid #f4f4f4;background:#fff;}
+.slider-container h2 {position:absolute;top:0;left:0;width:2.533rem;}
+.slider-wrapper {position:relative;}
+.slider-wrapper span {display:-webkit-box;overflow:hidden;text-overflow:ellipsis;-webkit-line-clamp:1;-webkit-box-orient:vertical;}
+.slider-wrapper a {position:relative;display:block;height:1.2rem;padding-right:0.7rem;font-size:16px;line-height:1.2rem;}
+.slider-wrapper a:after {content:'';position:absolute;top:50%;right:0.373rem;width:0.266rem;height:0.266rem;margin-top:-0.133rem;border:1px solid #636363;border-width:0 1px 1px 0;transform:rotate(-47deg);-webkit-transform:rotate(-47deg);}
+
+.swiper-pagination {padding-right:0.2rem;}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {width:0.213rem;height:0.213rem;}
+.swiper-pagination-bullet {width:0.16rem;height:0.16rem;border-radius:50% !important;background:#fff !important;vertical-align:middle;}
+
+.nav-container {background:#fff;}
+.nav-container li {float:left;text-align:center;}
+.nav-container a {display:block;padding:0.266rem 0;}
+.nav-container i {display:inline-block;overflow:hidden;width:1.2rem;height:1.2rem;}
+.nav-container span {display:block;margin:0.186rem auto 0;max-width:5em;white-space:nowrap;overflow:hidden;}
+
+.banner-container {margin-bottom:0.266rem;background:#fff;}
+.banner-title {position:relative;padding:0 0.266rem;font-size:16px;line-height:1.2rem;}
+.banner-title a {position:absolute;top:0;right:0.266rem;color:#666;font-size:14px;}
+.banner-container ul {border:1px solid #f4f4f4;border-width:0 0 1px 1px;}
+.banner-container li {float:left;border:1px solid #f4f4f4;border-width:1px 1px 0 0;}
+.banner-container li a {border-top:1px solid #f4f4f4;}
+.banner-container li a:first-child {border-top:0;}
+
+.indexscroll img{height:4.267rem;}

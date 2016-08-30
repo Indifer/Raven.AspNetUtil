@@ -37,7 +37,7 @@ namespace Raven.AspNet.MvcExtensions.View
         /// <returns></returns>
         public virtual IHtmlString RenderScript(string path)
         {
-            var bundlesPath = path.ToLower().Replace(".js", "").Replace(".", "_");//.Replace("assets", "bundles");
+            var bundlesPath = FormatScriptUrl(path);
             var bundles = System.Web.Optimization.BundleTable.Bundles;
 
             if (!_scriptsHs.Contains(path))
@@ -73,7 +73,7 @@ namespace Raven.AspNet.MvcExtensions.View
         /// <returns></returns>
         public virtual string ScriptUrl(string path)
         {
-            var bundlesPath = path.ToLower().Replace(".js", "").Replace(".", "_");//.Replace("assets", "bundles");
+            var bundlesPath = FormatScriptUrl(path);
             var bundles = System.Web.Optimization.BundleTable.Bundles;
 
             if (!_scriptsHs.Contains(path))
@@ -102,13 +102,23 @@ namespace Raven.AspNet.MvcExtensions.View
         }
 
         /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        private string FormatScriptUrl(string path)
+        {
+            return path.ToLower().Replace(".js", "-bdl").Replace(".min", "-min");
+        }
+
+        /// <summary>
         /// RenderStyle
         /// </summary>
         /// <param name="path"></param>
         /// <returns></returns>
         public virtual IHtmlString RenderStyle(string path)
         {
-            var bundlesPath = path.ToLower().Replace(".css", "").Replace(".", "_");//.Replace("assets", "bundles");
+            var bundlesPath = FormatStyleUrl(path);
             var bundles = System.Web.Optimization.BundleTable.Bundles;
 
             if (!_stylesHs.Contains(path))
@@ -142,7 +152,7 @@ namespace Raven.AspNet.MvcExtensions.View
         /// <returns></returns>
         public virtual string StyleUrl(string path)
         {
-            var bundlesPath = path.ToLower().Replace(".css", "").Replace(".", "_");//.Replace("assets", "bundles");
+            var bundlesPath = FormatStyleUrl(path);
             var bundles = System.Web.Optimization.BundleTable.Bundles;
 
             if (!_stylesHs.Contains(path))
@@ -167,6 +177,16 @@ namespace Raven.AspNet.MvcExtensions.View
                 return System.Web.Optimization.Styles.Url(path).ToString();
             }
 
+        }
+
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="path"></param>
+        /// <returns></returns>
+        private string FormatStyleUrl(string path)
+        {
+            return path.ToLower().Replace(".css", "-bdl").Replace(".min", "-min");
         }
     }
 }
