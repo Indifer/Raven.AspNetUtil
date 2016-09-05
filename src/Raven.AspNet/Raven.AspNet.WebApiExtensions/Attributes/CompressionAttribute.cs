@@ -26,67 +26,68 @@ namespace Raven.AspNet.WebApiExtensions.Attributes
             {  nameof(CompressionType.Zlib).ToLower(), CompressionType.Zlib }
         };
 
+        ///// <summary>
+        ///// 
+        ///// </summary>
+        ///// <param name="actContext"></param>
+        //public override void OnActionExecuted(HttpActionExecutedContext actContext)
+        //{
+        //    var content = actContext.Response.Content;
+        //    if (content != null)
+        //    {
+        //        string encoding = null;
+        //        CompressionType compressionType = GetCompressionType(actContext.Request, out encoding);
+        //        if (compressionType != CompressionType.None)
+        //        {
+        //            var bytes = content.ReadAsByteArrayAsync().Result;
+        //            if (bytes != null)
+        //            {
+        //                byte[] zlibbedContent = null;
+        //                zlibbedContent = CompressionHelper.CompressionByte(bytes, compressionType);
+        //                var newContent = new ByteArrayContent(zlibbedContent);
+        //                newContent.Headers.Add("Content-encoding", encoding);
+        //                newContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(content.Headers.ContentType.MediaType);
+
+        //                actContext.Response.Content = newContent;
+        //            }
+        //        }
+
+        //    }
+
+        //    base.OnActionExecuted(actContext);
+        //}
+
         /// <summary>
         /// 
         /// </summary>
-        /// <param name="actContext"></param>
-        public override void OnActionExecuted(HttpActionExecutedContext actContext)
+        /// <param name="actionExecutedContext"></param>
+        /// <param name="cancellationToken"></param>
+        /// <returns></returns>
+        public override async Task OnActionExecutedAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken)
         {
-            var content = actContext.Response.Content;
+            var content = actionExecutedContext.Response.Content;
             if (content != null)
             {
                 string encoding = null;
-                CompressionType compressionType = GetCompressionType(actContext.Request, out encoding);
+                CompressionType compressionType = GetCompressionType(actionExecutedContext.Request, out encoding);
                 if (compressionType != CompressionType.None)
                 {
                     var bytes = content.ReadAsByteArrayAsync().Result;
                     if (bytes != null)
                     {
                         byte[] zlibbedContent = null;
-                        zlibbedContent = CompressionHelper.CompressionByte(bytes, compressionType);
+                        zlibbedContent = await CompressionHelper.CompressionByteAsync(bytes, compressionType);
                         var newContent = new ByteArrayContent(zlibbedContent);
                         newContent.Headers.Add("Content-encoding", encoding);
                         newContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(content.Headers.ContentType.MediaType);
 
-                        actContext.Response.Content = newContent;
+                        actionExecutedContext.Response.Content = newContent;
                     }
                 }
 
             }
-
-            base.OnActionExecuted(actContext);
+            await base.OnActionExecutedAsync(actionExecutedContext, cancellationToken);
         }
-
-        //public override Task OnActionExecutedAsync(HttpActionExecutedContext actionExecutedContext, CancellationToken cancellationToken)
-        //{
-        //    var content = actionExecutedContext.Response.Content;
-        //    if (content != null)
-        //    {
-        //        string encoding = null;
-        //        CompressionType compressionType = GetCompressionType(actionExecutedContext.Request, out encoding);
-        //        if (compressionType != CompressionType.None)
-        //        {
-        //            return content.ReadAsByteArrayAsync().ContinueWith(x =>
-        //            {
-        //                var bytes = x.Result;
-        //                if (bytes != null)
-        //                {
-        //                    byte[] zlibbedContent = null;
-        //                    zlibbedContent = CompressionHelper.CompressionByte(bytes, compressionType);
-        //                    var newContent = new ByteArrayContent(zlibbedContent);
-        //                    newContent.Headers.Add("Content-encoding", encoding);
-        //                    newContent.Headers.ContentType = new System.Net.Http.Headers.MediaTypeHeaderValue(content.Headers.ContentType.MediaType);
-
-        //                    actionExecutedContext.Response.Content = newContent;
-        //                   //actContext.Response.Content.Headers.Add("Content-encoding", encoding);
-        //               }
-        //            });
-
-        //        }
-
-        //    }
-        //    return base.OnActionExecutedAsync(actionExecutedContext, cancellationToken);
-        //}
 
         /// <summary>
         /// 

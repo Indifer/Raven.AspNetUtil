@@ -9,7 +9,7 @@ namespace Raven.AspNet.WebApiExtensions.Util
 {
     internal static class CompressionHelper
     {
-        public static byte[] CompressionByte(byte[] str, CompressionType compressionType)
+        public static async Task<byte[]> CompressionByteAsync(byte[] str, CompressionType compressionType)
         {
             if (str == null)
             {
@@ -26,7 +26,8 @@ namespace Raven.AspNet.WebApiExtensions.Util
                             output, Ionic.Zlib.CompressionMode.Compress,
                             Ionic.Zlib.CompressionLevel.BestSpeed))
                         {
-                            compressor.Write(str, 0, str.Length);
+                            await compressor.WriteAsync(str, 0, str.Length);
+                            //compressor.Write(str, 0, str.Length);
                         }
                         break;
                     case CompressionType.GZip:
@@ -35,7 +36,8 @@ namespace Raven.AspNet.WebApiExtensions.Util
                             output, Ionic.Zlib.CompressionMode.Compress,
                             Ionic.Zlib.CompressionLevel.BestSpeed))
                         {
-                            compressor.Write(str, 0, str.Length);
+                            await compressor.WriteAsync(str, 0, str.Length);
+                            //compressor.Write(str, 0, str.Length);
                         }
                         break;
                     case CompressionType.Zlib:
@@ -44,7 +46,8 @@ namespace Raven.AspNet.WebApiExtensions.Util
                             output, Ionic.Zlib.CompressionMode.Compress,
                             Ionic.Zlib.CompressionLevel.BestSpeed))
                         {
-                            compressor.Write(str, 0, str.Length);
+                            await compressor.WriteAsync(str, 0, str.Length);
+                            //compressor.Write(str, 0, str.Length);
                         }
                         break;
                 }
