@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.WebApiExtensions", "Raven.AspNet\Raven.AspNet.WebApiExtensions\Raven.AspNet.WebApiExtensions.csproj", "{1EB9CFB0-4753-4608-875C-0160FA195B5D}"
 EndProject
@@ -10,6 +10,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.MvcExtensions", "Raven.AspNet\Raven.AspNet.MvcExtensions\Raven.AspNet.MvcExtensions.csproj", "{C08A8B5F-EFAE-4F0F-9D3F-A5B1D1B54DE9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.MvcExtensions.Test", "Raven.AspNet\Raven.AspNet.MvcExtensions.Test\Raven.AspNet.MvcExtensions.Test.csproj", "{ED0FDBEA-7472-4E78-9502-8FBF34215831}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.WebApiOwin", "Raven.AspNet\Raven.AspNet.WebApiOwin\Raven.AspNet.WebApiOwin.csproj", "{0757916A-E4FC-43BB-9DBF-991632C6B2CC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{ED0FDBEA-7472-4E78-9502-8FBF34215831}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED0FDBEA-7472-4E78-9502-8FBF34215831}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED0FDBEA-7472-4E78-9502-8FBF34215831}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0757916A-E4FC-43BB-9DBF-991632C6B2CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0757916A-E4FC-43BB-9DBF-991632C6B2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0757916A-E4FC-43BB-9DBF-991632C6B2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0757916A-E4FC-43BB-9DBF-991632C6B2CC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
