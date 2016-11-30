@@ -2,10 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>Raven.AspNet.WebApiExtensions</id>
-        <version>1.0.6</version>
-        <authors>LiangYi</authors>
+        <version>1.0.7</version>
+        <authors>indifer@126.com</authors>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-        <description>Raven.AspNet.WebApiExtensions</description>
+        <description>
+1.0.7
+add HttpActionContextExtensions
+		</description>
         <dependencies>
             <dependency id="Raven.Serializer" version="1.0.1" />
         </dependencies>

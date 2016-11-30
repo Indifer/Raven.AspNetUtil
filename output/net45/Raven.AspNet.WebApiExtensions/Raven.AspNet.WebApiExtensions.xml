@@ -14,11 +14,13 @@
             
             </summary>
         </member>
-        <member name="M:Raven.AspNet.WebApiExtensions.Attributes.CompressionAttribute.OnActionExecuted(System.Web.Http.Filters.HttpActionExecutedContext)">
+        <member name="M:Raven.AspNet.WebApiExtensions.Attributes.CompressionAttribute.OnActionExecutedAsync(System.Web.Http.Filters.HttpActionExecutedContext,System.Threading.CancellationToken)">
             <summary>
             
             </summary>
-            <param name="actContext"></param>
+            <param name="actionExecutedContext"></param>
+            <param name="cancellationToken"></param>
+            <returns></returns>
         </member>
         <member name="M:Raven.AspNet.WebApiExtensions.Attributes.CompressionAttribute.GetCompressionType(System.Net.Http.HttpRequestMessage,System.String@)">
             <summary>
@@ -118,6 +120,19 @@
             <param name="transportContext"></param>
             <returns></returns>
         </member>
+        <member name="T:Raven.AspNet.WebApiExtensions.HttpActionContextExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Raven.AspNet.WebApiExtensions.HttpActionContextExtensions.HasMarkerAttribute``1(System.Web.Http.Controllers.HttpActionContext)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="that"></param>
+            <returns></returns>
+        </member>
         <member name="T:Raven.AspNet.WebApiExtensions.Route.HttpRouteCollectionExtended">
             <summary>
             
@@ -158,10 +173,56 @@
             </summary>
             <param name="configuration"></param>
         </member>
+        <member name="M:Raven.AspNet.WebApiExtensions.Route.NamespaceHttpControllerSelector.InitializeApiControllerCache">
+            <summary>
+            
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:Raven.AspNet.WebApiExtensions.Route.NamespaceHttpControllerSelector.GetControllerFullName(System.Net.Http.HttpRequestMessage,System.String)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <param name="controllerName"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raven.AspNet.WebApiExtensions.Route.NamespaceHttpControllerSelector.SelectController(System.Net.Http.HttpRequestMessage)">
+            <summary>
+            
+            </summary>
+            <param name="request"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Raven.AspNet.WebApiExtensions.Util.CompressionHelper">
+            <summary>
+            
+            </summary>
+        </member>
         <member name="T:Raven.AspNet.WebApiExtensions.Util.CompressionType">
             <summary>
             Compression Type
             deflate,gzip,zlib
+            </summary>
+        </member>
+        <member name="F:Raven.AspNet.WebApiExtensions.Util.CompressionType.None">
+            <summary>
+            None
+            </summary>
+        </member>
+        <member name="F:Raven.AspNet.WebApiExtensions.Util.CompressionType.Deflate">
+            <summary>
+            Deflate
+            </summary>
+        </member>
+        <member name="F:Raven.AspNet.WebApiExtensions.Util.CompressionType.GZip">
+            <summary>
+            GZip
+            </summary>
+        </member>
+        <member name="F:Raven.AspNet.WebApiExtensions.Util.CompressionType.Zlib">
+            <summary>
+            Zlib
             </summary>
         </member>
     </members>

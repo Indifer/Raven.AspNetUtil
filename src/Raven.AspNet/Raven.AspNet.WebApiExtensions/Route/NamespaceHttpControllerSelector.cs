@@ -33,6 +33,10 @@ namespace Raven.AspNet.WebApiExtensions.Route
             _apiControllerCache = new Lazy<ConcurrentDictionary<string, Type>>(new Func<ConcurrentDictionary<string, Type>>(InitializeApiControllerCache));
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <returns></returns>
         private ConcurrentDictionary<string, Type> InitializeApiControllerCache()
         {
             IAssembliesResolver assembliesResolver = this._configuration.Services.GetAssembliesResolver();
@@ -40,7 +44,13 @@ namespace Raven.AspNet.WebApiExtensions.Route
 
             return new ConcurrentDictionary<string, Type>(types.ToDictionary(t => t.FullName, t => t));
         }
-
+        
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="request"></param>
+        /// <param name="controllerName"></param>
+        /// <returns></returns>
         public IEnumerable<string> GetControllerFullName(HttpRequestMessage request, string controllerName)
         {
             object namespaceName;
@@ -62,6 +72,11 @@ namespace Raven.AspNet.WebApiExtensions.Route
                    select k;
         }
 
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="request"></param>
+        /// <returns></returns>
         public override HttpControllerDescriptor SelectController(HttpRequestMessage request)
         {
             Type type;

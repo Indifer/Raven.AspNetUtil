@@ -86,6 +86,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FilterContextExtensions.cs" />
     <Compile Include="View\CustomWebViewPage.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

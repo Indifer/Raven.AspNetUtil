@@ -7,6 +7,9 @@ using System.Threading.Tasks;
 
 namespace Raven.AspNet.WebApiExtensions.Util
 {
+    /// <summary>
+    /// 
+    /// </summary>
     internal static class CompressionHelper
     {
         public static async Task<byte[]> CompressionByteAsync(byte[] str, CompressionType compressionType)
@@ -63,9 +66,21 @@ namespace Raven.AspNet.WebApiExtensions.Util
     /// </summary>
     public enum CompressionType : int
     {
+        /// <summary>
+        /// None
+        /// </summary>
         None = 0,
+        /// <summary>
+        /// Deflate
+        /// </summary>
         Deflate = 1,
+        /// <summary>
+        /// GZip
+        /// </summary>
         GZip = 2,
+        /// <summary>
+        /// Zlib
+        /// </summary>
         Zlib = 3
     }
 

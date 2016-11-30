@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Raven.AspNet.MvcExtensions</name>
+    </assembly>
+    <members>
+        <member name="T:Raven.AspNet.MvcExtensions.FilterContextExtensions">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Raven.AspNet.MvcExtensions.FilterContextExtensions.HasMarkerAttribute``1(System.Web.Mvc.ActionExecutingContext)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="that"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raven.AspNet.MvcExtensions.FilterContextExtensions.HasMarkerAttribute``1(System.Web.Mvc.ActionExecutedContext)">
+            <summary>
+            
+            </summary>
+            <typeparam name="T"></typeparam>
+            <param name="that"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Raven.AspNet.MvcExtensions.View.CustomWebViewPage`1">
+            <summary>
+            自定义web页面
+            </summary>
+            <typeparam name="T"></typeparam>
+        </member>
+        <member name="P:Raven.AspNet.MvcExtensions.View.CustomWebViewPage`1.IsAssetsCompress">
+            <summary>
+            资源是否压缩
+            </summary>
+        </member>
+        <member name="M:Raven.AspNet.MvcExtensions.View.CustomWebViewPage`1.#ctor">
+            <summary>
+            构造函数
+            </summary>
+        </member>
+        <member name="M:Raven.AspNet.MvcExtensions.View.CustomWebViewPage`1.RenderScript(System.String)">
+            <summary>
+            RenderScript
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raven.AspNet.MvcExtensions.View.CustomWebViewPage`1.ScriptUrl(System.String)">
+            <summary>
+            ScriptUrl
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raven.AspNet.MvcExtensions.View.CustomWebViewPage`1.FormatScriptUrl(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raven.AspNet.MvcExtensions.View.CustomWebViewPage`1.RenderStyle(System.String)">
+            <summary>
+            RenderStyle
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raven.AspNet.MvcExtensions.View.CustomWebViewPage`1.StyleUrl(System.String)">
+            <summary>
+            StyleUrl
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Raven.AspNet.MvcExtensions.View.CustomWebViewPage`1.FormatStyleUrl(System.String)">
+            <summary>
+            
+            </summary>
+            <param name="path"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

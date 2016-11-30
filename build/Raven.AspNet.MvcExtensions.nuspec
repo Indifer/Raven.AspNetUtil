@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>Raven.AspNet.MvcExtensions</id>
+        <version>1.0.3</version>
+        <authors>indifer@126.com</authors>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>
+1.0.7
+add FilterContextExtensions
+		</description>
+        <dependencies>
+            <dependency id="Raven.Serializer" version="1.0.1" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\output\net45\Raven.AspNet.MvcExtensions\Raven.AspNet.MvcExtensions.dll" target="lib\net45\Raven.AspNet.MvcExtensions.dll" />
+        <file src="..\output\net45\Raven.AspNet.MvcExtensions\Raven.AspNet.MvcExtensions.xml" target="lib\net45\Raven.AspNet.MvcExtensions.xml" />
+    </files>
+</package>
