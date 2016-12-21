@@ -108,7 +108,7 @@ namespace Raven.AspNet.MvcExtensions.View
         /// <returns></returns>
         private string FormatScriptUrl(string path)
         {
-            return path.ToLower().Replace(".js", "-bdl").Replace(".min", "-min");
+            return path.ToLower().Replace(".js", "-bdl").Replace(".", "-");
         }
 
         /// <summary>
@@ -186,7 +186,7 @@ namespace Raven.AspNet.MvcExtensions.View
         /// <returns></returns>
         private string FormatStyleUrl(string path)
         {
-            return path.ToLower().Replace(".css", "-bdl").Replace(".min", "-min");
+            return path.ToLower().Replace(".css", "-bdl").Replace(".", "-");
         }
     }
 }

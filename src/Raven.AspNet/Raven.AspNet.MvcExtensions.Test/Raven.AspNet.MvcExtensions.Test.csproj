@@ -107,7 +107,7 @@
   <ItemGroup>
     <Content Include="assets\css\smc_home.css" />
     <Content Include="assets\css\smc_shop.css" />
-    <Content Include="assets\js\flexible.js" />
+    <Content Include="assets\js\flexible.1.1.1.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
