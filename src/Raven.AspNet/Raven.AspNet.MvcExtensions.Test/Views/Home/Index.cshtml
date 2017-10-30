@@ -9,13 +9,25 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <script type="text/javascript" src="@ScriptUrl("~/assets/js/flexible.1.1.1.js")"></script>
+    <script type="text/javascript" src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
     <title>Index</title>
     @*<link rel="stylesheet" href="@StyleUrl("~/assets/css/smc_home.css")" type="text/css">*@
     @RenderStyle("~/assets/css/smc_home.css")
 </head>
 <body>
-    <div> 
-        aaa
-    </div>
+<div id="main">
+    aaa
+</div>
+<script type="text/javascript">
+    $(document).ready(function() {
+        $.ajax({
+            url: '/home/ajaxtest',
+            data: { id: -5, name: "6chars" },
+            success: function(response) {
+                $("#main").html(JSON.stringify(response));
+            }
+        });
+    })
+</script>
 </body>
 </html>

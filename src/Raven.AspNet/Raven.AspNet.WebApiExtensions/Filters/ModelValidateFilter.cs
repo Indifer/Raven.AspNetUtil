@@ -28,7 +28,7 @@ namespace Raven.AspNet.WebApiExtensions.Filters
             if (!actionContext.ModelState.IsValid)
             {
                 StringBuilder errMsg=new StringBuilder();
-                foreach (var item in actionContext.ModelState.Values)
+                foreach (var item in actionContext.ModelState.Values.Where(v=>v.Errors.Count>0))
                 {
                     errMsg.AppendLine(string.Join(";", item.Errors.Select(e => e.ErrorMessage)));
                 }
