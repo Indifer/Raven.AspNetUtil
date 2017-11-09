@@ -20,7 +20,7 @@ namespace Raven.AspNet.MvcExtensions.Test.Controllers
         //ajax请求会验证参数
         public JsonResult AjaxTest(TestModel model)
         {
-            return Json(new {Code=0,Message="ok"},JsonRequestBehavior.AllowGet);
+            return Json(new { Code = 0, Message = "ok" }, JsonRequestBehavior.AllowGet);
         }
     }
 }

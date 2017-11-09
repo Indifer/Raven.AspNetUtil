@@ -24,6 +24,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -63,9 +64,6 @@
     <Reference Include="Raven.Serializer, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\modules\Raven.Serializer\output\net45\Raven.Serializer\Raven.Serializer.dll</HintPath>
-    </Reference>
-    <Reference Include="Raven.Serializer.WithJil">
-      <HintPath>..\..\..\modules\Raven.Serializer\output\net45\Raven.Serializer.WithJil\Raven.Serializer.WithJil.dll</HintPath>
     </Reference>
     <Reference Include="Raven.Serializer.WithMsgPack">
       <HintPath>..\..\..\modules\Raven.Serializer\output\net45\Raven.Serializer.WithMsgPack\Raven.Serializer.WithMsgPack.dll</HintPath>

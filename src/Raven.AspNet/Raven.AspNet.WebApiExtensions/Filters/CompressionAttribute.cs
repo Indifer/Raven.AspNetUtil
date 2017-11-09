@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 using System.Web.Http.Filters;
 using System.Threading;
 
-namespace Raven.AspNet.WebApiExtensions.Attributes
+namespace Raven.AspNet.WebApiExtensions.Filters
 {
     /// <summary>
     /// 压缩

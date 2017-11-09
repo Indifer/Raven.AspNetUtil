@@ -13,7 +13,7 @@ namespace Raven.AspNet.WebApiExtensions.Filters
     /// <summary>
     /// 模型验证过滤器
     /// </summary>
-    public class ModelValidateAttribute:ActionFilterAttribute
+    public class ModelValidateAttribute : ActionFilterAttribute
     {
         /// <summary>
         /// 验证失败错误码
@@ -27,15 +27,16 @@ namespace Raven.AspNet.WebApiExtensions.Filters
         {
             if (!actionContext.ModelState.IsValid)
             {
-                StringBuilder errMsg=new StringBuilder();
-                foreach (var item in actionContext.ModelState.Values.Where(v=>v.Errors.Count>0))
+                StringBuilder errMsg = new StringBuilder();
+                foreach (var item in actionContext.ModelState.Values.Where(v => v.Errors.Count > 0))
                 {
-                    errMsg.AppendLine(string.Join(";", item.Errors.Select(e => e.ErrorMessage)));
+                    errMsg.Append(string.Join(";", item.Errors.Select(e => e.ErrorMessage)));
+                    errMsg.Append(";");
                 }
-                actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.OK,new
+                actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.OK, new
                 {
-                    Code=ValidateFailedCode,
-                    Message=errMsg.ToString()
+                    Code = ValidateFailedCode,
+                    Message = errMsg.ToString()
                 });
             }
         }

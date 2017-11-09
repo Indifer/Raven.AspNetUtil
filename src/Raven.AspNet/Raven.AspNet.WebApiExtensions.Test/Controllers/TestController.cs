@@ -1,6 +1,7 @@
-﻿using Raven.AspNet.WebApiExtensions.Attributes;
+﻿using Raven.AspNet.WebApiExtensions.Filters;
 using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
@@ -37,13 +38,23 @@ namespace Raven.AspNet.WebApiExtensions.Test.A.Controllers
             return list;
         }
 
+        [ModelValidate]
+        [HttpPost]
+        public User D([FromBody]User user)
+        {
+            return user;
+        }
+
     }
 
     public class User
     {
 
+        [Required(ErrorMessage = "姓名不能为空")]
+        [System.ComponentModel.DataAnnotations.StringLength(20)]
         public string Name { get; set; }
 
+        [Range(1, 20, ErrorMessage = "Id必须在1到20之间")]
         public long ID { get; set; }
     }
 

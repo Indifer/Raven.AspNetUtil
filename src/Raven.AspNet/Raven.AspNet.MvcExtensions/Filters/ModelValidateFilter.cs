@@ -31,11 +31,20 @@ namespace Raven.AspNet.MvcExtensions.Filters
                 if (!modelState.IsValid)
                 {
                     StringBuilder errMsg = new StringBuilder();
-                    foreach (var item in modelState.Values.Where(v=>v.Errors.Count>0))
+                    foreach (var item in modelState.Values.Where(v => v.Errors.Count > 0))
                     {
-                        errMsg.AppendLine(string.Join(";", item.Errors.Select(e => e.ErrorMessage)));
+                        errMsg.Append(string.Join(";", item.Errors.Select(e => e.ErrorMessage)));
+                        errMsg.Append(";");
                     }
-                    filterContext.Result = new JsonResult {Data = new {Code= ValidateFailedCode, Message=errMsg.ToString()},JsonRequestBehavior = JsonRequestBehavior.AllowGet};
+                    filterContext.Result = new JsonResult
+                    {
+                        Data = new
+                        {
+                            Code = ValidateFailedCode,
+                            Message = errMsg.ToString()
+                        },
+                        JsonRequestBehavior = JsonRequestBehavior.AllowGet
+                    };
                 }
             }
         }
