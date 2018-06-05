@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\liang\.Rider2018.1\system\resharper-host\local\Transient\ReSharperHost\v12\SolutionCaches\_Raven.AspNet.831301164.00" t="ExcludeRecursive" />
+    <e p="E:\Work\github_raven_source\Raven.AspNetUtil\src" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive">
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\csc.exe" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\Microsoft.Build.Tasks.CodeAnalysis.dll" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.CSharp.dll" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.dll" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CodeAnalysis.VisualBasic.dll" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\Microsoft.CSharp.Core.targets" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\Microsoft.VisualBasic.Core.targets" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\System.Collections.Immutable.dll" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\System.Reflection.Metadata.dll" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\vbc.exe" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\VBCSCompiler.exe" t="Include" />
+        <e p="Microsoft.Net.Compilers.1.0.0\tools\VBCSCompiler.exe.config" t="Include" />
+      </e>
+      <e p="Raven.AspNet\Raven.AspNet.MvcExtensions" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Factorys" t="Include">
+          <e p="ControllerFactoryHandler.cs" t="Include" />
+          <e p="HasHandlerControllerFactory.cs" t="Include" />
+        </e>
+        <e p="FilterContextExtensions.cs" t="Include" />
+        <e p="Filters" t="Include">
+          <e p="ModelValidateFilter.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Raven.AspNet.MvcExtensions.csproj" t="IncludeRecursive" />
+        <e p="View" t="Include">
+          <e p="CustomWebViewPage.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Raven.AspNet\Raven.AspNet.MvcExtensions.Test" t="IncludeRecursive">
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="RouteConfig.cs" t="Include" />
+        </e>
+        <e p="assets" t="Include">
+          <e p="css" t="Include">
+            <e p="smc_home.css" t="Include" />
+            <e p="smc_shop.css" t="Include" />
+          </e>
+          <e p="js" t="Include">
+            <e p="flexible.1.1.1.js" t="Include" />
+          </e>
+        </e>
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="HomeController.cs" t="Include" />
+        </e>
+        <e p="CustomWebViewPage.cs" t="Include" />
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Models" t="Include">
+          <e p="TestModel.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Raven.AspNet.MvcExtensions.Test.csproj" t="IncludeRecursive" />
+        <e p="roslyn" t="Include" />
+        <e p="Views" t="Include">
+          <e p="Home" t="Include">
+            <e p="Index.cshtml" t="Include" />
+          </e>
+          <e p="Web.config" t="Include" />
+        </e>
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="Raven.AspNet\Raven.AspNet.WebApiExtensions" t="IncludeRecursive">
+        <e p="app.config" t="Include" />
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Dispatchers" t="Include">
+          <e p="HasHandlerHttpControllerActivator.cs" t="Include" />
+          <e p="HttpControllerActivatorHandler.cs" t="Include" />
+        </e>
+        <e p="Filters" t="Include">
+          <e p="CompressionAttribute.cs" t="Include" />
+          <e p="ModelValidateFilter.cs" t="Include" />
+        </e>
+        <e p="Formatters" t="Include">
+          <e p="JilJsonFormatter.cs" t="Include" />
+          <e p="MsgPackFormatter.cs" t="Include" />
+        </e>
+        <e p="HttpActionContextExtensions.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Raven.AspNet.WebApiExtensions.csproj" t="IncludeRecursive" />
+        <e p="Route" t="Include">
+          <e p="HttpRouteCollectionExtended.cs" t="Include" />
+          <e p="NamespaceHttpControllerSelector.cs" t="Include" />
+        </e>
+        <e p="Util" t="Include">
+          <e p="CompressionHelper.cs" t="Include" />
+        </e>
+      </e>
+      <e p="Raven.AspNet\Raven.AspNet.WebApiExtensions.Test" t="IncludeRecursive">
+        <e p="App_Data" t="Include" />
+        <e p="App_Start" t="Include">
+          <e p="WebApiConfig.cs" t="Include" />
+        </e>
+        <e p="Areas" t="Include">
+          <e p="Order" t="Include">
+            <e p="Controllers" t="Include">
+              <e p="HomeController.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Controllers" t="Include">
+          <e p="TestController.cs" t="Include" />
+        </e>
+        <e p="Global.asax" t="Include" />
+        <e p="Global.asax.cs" t="Include" />
+        <e p="Models" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="packages.config" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Raven.AspNet.WebApiExtensions.Test.csproj" t="IncludeRecursive" />
+        <e p="RequestContextMiddlewar.cs" t="Include" />
+        <e p="roslyn" t="Include" />
+        <e p="Web.config" t="Include" />
+        <e p="Web.Debug.config" t="Include" />
+        <e p="Web.Release.config" t="Include" />
+      </e>
+      <e p="Raven.AspNet\Raven.AspNet.WebApiOwin" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="Class1.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+        </e>
+        <e p="Raven.AspNet.WebApiOwin.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Raven.AspNet\Raven.AspNetCore.Consul" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="ConsulMonitorExtensions.cs" t="Include" />
+        <e p="ConsulMonitorMiddleware.cs" t="Include" />
+        <e p="ConsulMonitorWebHostBuilderExtensions.cs" t="Include" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Raven.AspNetCore.Consul.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Raven.AspNetCore.Consul.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="Raven.AspNet\Raven.AspNetCore.Consul.Test" t="IncludeRecursive">
+        <e p="Bin" t="ExcludeRecursive" />
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp2.1" t="Include">
+              <e p="Raven.AspNetCore.Consul.Test.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Raven.AspNetCore.Consul.Test.csproj" t="IncludeRecursive" />
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="Raven.AspNet.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
