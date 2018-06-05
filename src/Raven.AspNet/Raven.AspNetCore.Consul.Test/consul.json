@@ -1,0 +1,10 @@
+{
+  "Address": "http://172.31.224.203:8500/",
+  "Token": "",
+  "Discovery": {
+    "InstanceID": "${ServiceName}-${ServiceHost}:${ServicePort}",
+    "ServiceName": "${ServiceName}",
+    "Host": "${ServiceHost}",
+    "Port": "${ServicePort}"
+  }
+}

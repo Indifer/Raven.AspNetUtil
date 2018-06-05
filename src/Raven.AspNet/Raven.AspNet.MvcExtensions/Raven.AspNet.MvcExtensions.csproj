@@ -86,6 +86,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Factorys\ControllerFactoryHandler.cs" />
+    <Compile Include="Factorys\HasHandlerControllerFactory.cs" />
     <Compile Include="FilterContextExtensions.cs" />
     <Compile Include="Filters\ModelValidateFilter.cs" />
     <Compile Include="View\CustomWebViewPage.cs" />

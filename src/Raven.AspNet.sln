@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.WebApiExtensions", "Raven.AspNet\Raven.AspNet.WebApiExtensions\Raven.AspNet.WebApiExtensions.csproj", "{1EB9CFB0-4753-4608-875C-0160FA195B5D}"
 EndProject
@@ -12,6 +12,12 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.MvcExtensions.Test", "Raven.AspNet\Raven.AspNet.MvcExtensions.Test\Raven.AspNet.MvcExtensions.Test.csproj", "{ED0FDBEA-7472-4E78-9502-8FBF34215831}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNet.WebApiOwin", "Raven.AspNet\Raven.AspNet.WebApiOwin\Raven.AspNet.WebApiOwin.csproj", "{0757916A-E4FC-43BB-9DBF-991632C6B2CC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Raven.AspNetCore.Consul.Test", "Raven.AspNet\Raven.AspNetCore.Consul.Test\Raven.AspNetCore.Consul.Test.csproj", "{9BAB5DC6-C74D-4370-9787-F8B52DC789A2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Raven.AspNetCore.Discovery", "Raven.AspNet\Raven.AspNetCore.Discovery\Raven.AspNetCore.Discovery.csproj", "{776D4823-6799-400E-92BE-DCF4E984FDE4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Raven.AspNetCore.Discovery.Consul", "Raven.AspNet\Raven.AspNetCore.Discovery.Consul\Raven.AspNetCore.Discovery.Consul.csproj", "{621101F6-2428-44D6-BD02-306327E625C6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,8 +45,23 @@ Global
 		{0757916A-E4FC-43BB-9DBF-991632C6B2CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0757916A-E4FC-43BB-9DBF-991632C6B2CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0757916A-E4FC-43BB-9DBF-991632C6B2CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9BAB5DC6-C74D-4370-9787-F8B52DC789A2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9BAB5DC6-C74D-4370-9787-F8B52DC789A2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9BAB5DC6-C74D-4370-9787-F8B52DC789A2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9BAB5DC6-C74D-4370-9787-F8B52DC789A2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{776D4823-6799-400E-92BE-DCF4E984FDE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{776D4823-6799-400E-92BE-DCF4E984FDE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{776D4823-6799-400E-92BE-DCF4E984FDE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{776D4823-6799-400E-92BE-DCF4E984FDE4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{621101F6-2428-44D6-BD02-306327E625C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{621101F6-2428-44D6-BD02-306327E625C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{621101F6-2428-44D6-BD02-306327E625C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{621101F6-2428-44D6-BD02-306327E625C6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {673B0CDF-06ED-431C-8B35-E7F969D59A80}
 	EndGlobalSection
 EndGlobal

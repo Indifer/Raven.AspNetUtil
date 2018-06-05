@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Raven.AspNet.WebApiExtensions.Util
+namespace Raven.AspNet.WebApiExtensions
 {
     /// <summary>
     /// 

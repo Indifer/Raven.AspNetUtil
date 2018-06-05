@@ -67,6 +67,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dispatchers\HasHandlerHttpControllerActivator.cs" />
+    <Compile Include="Dispatchers\HttpControllerActivatorHandler.cs" />
     <Compile Include="Filters\CompressionAttribute.cs" />
     <Compile Include="Filters\ModelValidateFilter.cs" />
     <Compile Include="Formatters\JilJsonFormatter.cs" />

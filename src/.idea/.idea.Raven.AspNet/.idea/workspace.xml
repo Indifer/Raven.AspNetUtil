@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="41133b6c-3ccc-4e28-9c7b-7e1a471db05a" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Raven.AspNet/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.MvcExtensions.Test/Global.asax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.MvcExtensions.Test/Global.asax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.MvcExtensions/Filters/ModelValidateFilter.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.MvcExtensions/Filters/ModelValidateFilter.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.MvcExtensions/Raven.AspNet.MvcExtensions.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.MvcExtensions/Raven.AspNet.MvcExtensions.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions.Test/App_Start/WebApiConfig.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions.Test/App_Start/WebApiConfig.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions.Test/Global.asax.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions.Test/Global.asax.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions.Test/Raven.AspNet.WebApiExtensions.Test.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions.Test/Raven.AspNet.WebApiExtensions.Test.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions/Filters/CompressionAttribute.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions/Filters/CompressionAttribute.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions/Raven.AspNet.WebApiExtensions.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions/Raven.AspNet.WebApiExtensions.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions/Util/CompressionHelper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions/Util/CompressionHelper.cs" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="ConsulMonitorExtensions.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/ConsulMonitorExtensions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Raven.AspNetCore.Consul.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/Raven.AspNetCore.Consul.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Raven.AspNetCore.Consul.Test.csproj" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Raven.AspNetCore.Consul.Test.csproj">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConsulMonitorMiddleware.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/ConsulMonitorMiddleware.cs">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="ConsulMonitorWebHostBuilderExtensions.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/ConsulMonitorWebHostBuilderExtensions.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="16" selection-start-line="16" selection-end-line="16" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Program.cs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1527676038410" expanded="true" signature="6:102" ph="..." />
+                <marker date="1527676038410" expanded="true" signature="142:611" ph="{...}" />
+                <marker date="1527676038410" expanded="true" signature="162:609" ph="{...}" />
+                <marker date="1527676038410" expanded="true" signature="208:603" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Startup.cs" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+              <folding>
+                <marker date="1527675902467" expanded="false" signature="6:183" ph="..." />
+                <marker date="1527675902467" expanded="true" signature="223:607" ph="{...}" />
+                <marker date="1527675902467" expanded="true" signature="250:605" ph="{...}" />
+                <marker date="1527675902467" expanded="true" signature="323:343" ph="{...}" />
+                <marker date="1527675902467" expanded="true" signature="399:598" ph="{...}" />
+                <marker date="1527675902467" expanded="true" signature="477:585" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/ConsulMonitorWebHostBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNet.WebApiExtensions/Filters/CompressionAttribute.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/ConsulMonitorMiddleware.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/ConsulMonitorExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/Raven.AspNetCore.Consul.csproj" />
+        <option value="$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Raven.AspNetCore.Consul.Test.csproj" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Raven.AspNet (7 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Raven.AspNet (7 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Raven.AspNetCore.Consul" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+            <path>
+              <item name="" type="13324e5d:SolutionExplorerViewPane$ProjectViewPaneTreeStructure$createRoot$1" />
+              <item name="Raven.AspNet (7 projects)" type="977d5f41:SolutionExplorerNodeRider" />
+              <item name="Raven.AspNetCore.Consul.Test" type="977d5f41:SolutionExplorerNodeRider" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-file-system" value="false" />
+        <option name="show-all-items" value="false" />
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.CSharpInteractiveConfiguration" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/bin/Debug/netcoreapp2.1/Raven.AspNetCore.Consul.Test.dll" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <envs>
+        <env name="ASPNETCORE_ENVIRONMENT" value="Development" />
+        <env name="ASPNETCORE_URLS" value="http://localhost:5000" />
+      </envs>
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Raven.AspNetCore.Consul.Test.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="DotNetCore" />
+      <option name="PROJECT_TFM" value=".NETCoreApp,Version=v2.1" />
+      <browser url="http://localhost:5000" />
+    </configuration>
+    <configuration default="true" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <browser url="http://localhost:31794/" />
+    </configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="41133b6c-3ccc-4e28-9c7b-7e1a471db05a" name="Default" comment="" />
+      <created>1527746445512</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1527746445512</updated>
+      <workItem from="1527746447065" duration="845000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="845000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Errors In Solution" />
+      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info anchor="bottom" id="Unit Tests" />
+      <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
+      <window_info anchor="bottom" id="REST Client" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.32977587" />
+      <window_info anchor="bottom" id="Version Control" />
+      <window_info anchor="bottom" id="Terminal" />
+      <window_info anchor="bottom" id="NuGet" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Build" />
+      <window_info anchor="right" id="Database" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info id="Favorites" side_tool="true" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" isUnityUI="false" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/ConsulMonitorWebHostBuilderExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="16" selection-start-line="16" selection-end-line="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/ConsulMonitorMiddleware.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/ConsulMonitorExtensions.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul/Raven.AspNetCore.Consul.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Raven.AspNetCore.Consul.Test.csproj">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+          <folding>
+            <marker date="1527675902467" expanded="false" signature="6:183" ph="..." />
+            <marker date="1527675902467" expanded="true" signature="223:607" ph="{...}" />
+            <marker date="1527675902467" expanded="true" signature="250:605" ph="{...}" />
+            <marker date="1527675902467" expanded="true" signature="323:343" ph="{...}" />
+            <marker date="1527675902467" expanded="true" signature="399:598" ph="{...}" />
+            <marker date="1527675902467" expanded="true" signature="477:585" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Raven.AspNet/Raven.AspNetCore.Consul.Test/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1527676038410" expanded="true" signature="6:102" ph="..." />
+            <marker date="1527676038410" expanded="true" signature="142:611" ph="{...}" />
+            <marker date="1527676038410" expanded="true" signature="162:609" ph="{...}" />
+            <marker date="1527676038410" expanded="true" signature="208:603" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

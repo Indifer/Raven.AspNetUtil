@@ -41,6 +41,9 @@ namespace Raven.AspNet.WebApiExtensions.Test
                 defaults: new { id = RouteParameter.Optional },
                 namespaces: new string[] { "Raven.AspNet.WebApiExtensions.Test.A.Controllers" }                
             );
+
+            config.MessageHandlers.Add(new Handler1());
+
         }
     }
 }

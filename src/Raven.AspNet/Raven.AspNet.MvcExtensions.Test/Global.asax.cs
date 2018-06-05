@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using Raven.AspNet.MvcExtensions.Factorys;
 
 namespace Raven.AspNet.MvcExtensions.Test
 {
@@ -14,7 +15,10 @@ namespace Raven.AspNet.MvcExtensions.Test
         {
             AreaRegistration.RegisterAllAreas();
             RouteConfig.RegisterRoutes(RouteTable.Routes);
+
             BundleTable.EnableOptimizations = true;
+            
+            ControllerBuilder.Current.UseHandlerControllerFactory();
         }
     }
 }

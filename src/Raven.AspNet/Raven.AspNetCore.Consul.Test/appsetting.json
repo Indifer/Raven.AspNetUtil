@@ -1,0 +1,6 @@
+{
+  "ServiceName": "raven",
+  "ServiceHost": "172.31.224.193",
+  "ServicePort": 9200,
+  "urls": "http://${ServiceHost}:${ServicePort}/"
+}

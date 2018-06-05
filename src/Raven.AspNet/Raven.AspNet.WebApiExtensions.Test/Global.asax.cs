@@ -1,4 +1,5 @@
-﻿using Raven.AspNet.WebApiExtensions.Route;
+﻿using Raven.AspNet.WebApiExtensions.Dispatchers;
+using Raven.AspNet.WebApiExtensions.Route;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -15,7 +16,10 @@ namespace Raven.AspNet.WebApiExtensions.Test
         {
             GlobalConfiguration.Configuration.Services.Replace(typeof(IHttpControllerSelector),
                 new NamespaceHttpControllerSelector(GlobalConfiguration.Configuration));
+            GlobalConfiguration.Configuration.Services.Replace(typeof(IHttpControllerActivator), new HasHandlerHttpControllerActivator());
+
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            ;
         }
     }
 }

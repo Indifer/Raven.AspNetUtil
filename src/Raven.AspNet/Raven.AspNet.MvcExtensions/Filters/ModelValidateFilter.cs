@@ -24,7 +24,7 @@ namespace Raven.AspNet.MvcExtensions.Filters
         /// </summary>
         /// <param name="filterContext"></param>
         public override void OnActionExecuting(ActionExecutingContext filterContext)
-        {
+        {            
             if (filterContext.RequestContext.HttpContext.Request.IsAjaxRequest())
             {
                 var modelState = filterContext.Controller.ViewData.ModelState;
