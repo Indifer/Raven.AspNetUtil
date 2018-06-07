@@ -1,12 +1,6 @@
 ﻿using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.DependencyInjection.Extensions;
-using System;
-using System.Collections.Generic;
-using System.Text;
-using Raven.AspNetCore.Discovery;
 using Raven.AspNetCore.Discovery.Consul;
 
 namespace Raven.AspNetCore.Consul.Test
@@ -15,7 +9,14 @@ namespace Raven.AspNetCore.Consul.Test
     {
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddConsul();
+            //services.Configure<CookiePolicyOptions>(options =>
+            //{
+            //    // This lambda determines whether user consent for non-essential cookies is needed for a given request.
+            //    options.CheckConsentNeeded = context => true;
+            //    options.MinimumSameSitePolicy = SameSiteMode.None;
+            //});
+            //services.AddMvc().SetCompatibilityVersion(Microsoft.AspNetCore.Mvc.CompatibilityVersion.Version_2_1);
+            services.AddMvc();
             ;
         }
 
@@ -23,10 +24,25 @@ namespace Raven.AspNetCore.Consul.Test
         {
             app.UseConsulMonitor(env, lifetime);
 
-            app.Run(context =>
+            if (env.IsDevelopment())
             {
-                return context.Response.WriteAsync("Hello from ASP.NET Core!");
-            });
+                app.UseDeveloperExceptionPage();
+            }
+            else
+            {
+                app.UseExceptionHandler("/Error");
+                app.UseHsts();
+            }
+
+            //app.UseHttpsRedirection();
+            app.UseStaticFiles();
+            app.UseCookiePolicy();
+            // 添加MVC中间件
+            app.UseMvc();
+            //app.Run(context =>
+            //{
+            //    return context.Response.WriteAsync("Hello from ASP.NET Core!");
+            //});
 
         }
 

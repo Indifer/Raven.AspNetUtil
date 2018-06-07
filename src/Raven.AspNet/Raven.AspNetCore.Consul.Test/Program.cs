@@ -7,6 +7,7 @@ using Rabbit.Extensions.Configuration;
 using Raven.AspNetCore.Discovery;
 using Raven.AspNetCore.Discovery.Consul;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.AspNetCore;
 
 namespace Raven.AspNetCore.Consul.Test
 {
@@ -20,10 +21,8 @@ namespace Raven.AspNetCore.Consul.Test
                 .Build()
                 .EnableTemplateSupport();
 
-            var host = new WebHostBuilder()
+            var host = WebHost.CreateDefaultBuilder(args)
                 .ConfigureLogging(factory => factory.AddConsole())
-                .UseKestrel()
-                .UseSockets()
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseConfiguration(configuration)
                 .UseStartup<Startup>()

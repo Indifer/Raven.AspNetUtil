@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Raven.AspNetCore.Discovery.Consul
+﻿namespace Raven.AspNetCore.Discovery.Consul
 {
     public static class Defaults
     {
