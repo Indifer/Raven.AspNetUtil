@@ -20,8 +20,8 @@ namespace Raven.AspNet.MvcExtensions
         /// <returns></returns>
         public static bool HasMarkerAttribute<T>(this ActionExecutingContext that)
         {
-            return that.ActionDescriptor.GetFilterAttributes(true).FirstOrDefault(x => x is T) != null
-                || that.ActionDescriptor.ControllerDescriptor.GetFilterAttributes(true).FirstOrDefault(x => x is T) != null;
+            return that.ActionDescriptor.GetFilterAttributes(true).Any(x => x is T)
+                || that.ActionDescriptor.ControllerDescriptor.GetFilterAttributes(true).Any(x => x is T);
         }
 
         /// <summary>
@@ -32,8 +32,8 @@ namespace Raven.AspNet.MvcExtensions
         /// <returns></returns>
         public static bool HasMarkerAttribute<T>(this ActionExecutedContext that)
         {
-            return that.ActionDescriptor.GetFilterAttributes(true).FirstOrDefault(x => x is T) != null
-                || that.ActionDescriptor.ControllerDescriptor.GetFilterAttributes(true).FirstOrDefault(x => x is T) != null;
+            return that.ActionDescriptor.GetFilterAttributes(true).Any(x => x is T)
+                || that.ActionDescriptor.ControllerDescriptor.GetFilterAttributes(true).Any(x => x is T);
         }
     }
 }
